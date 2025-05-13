@@ -3,8 +3,8 @@ from utils import generate_script
 
 st.title("视频脚本生成器")
 with st.sidebar:
-    deepseek_api_key = st.text_input("请输入Deepseek API密钥",type="password")
-    st.markdown("[获取Deepseek API密钥](https://platform.deepseek.com/api_keys)")
+    deepseek_api_key = st.text_input("请输入API密钥",type="password")
+    st.markdown("[获取API密钥](https://api.aigc369.com/v1)")
 subject = st.text_input("请输入视频的主题")
 video_length = st.number_input("请输入视频的大致时长（单位：分钟）",min_value=0.1,step=0.1,value=None)
 creativity = st.slider("请选择视频脚本的创造力（数字小说明更严谨，数字大说明更多样）"

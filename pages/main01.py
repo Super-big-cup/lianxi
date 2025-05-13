@@ -3,8 +3,8 @@ from utils_01 import generate_xiaohongshu
 st.header("小红书文案生成器 📕")
 
 with st.sidebar:
-    deepseek_api_key = st.text_input("请输入Deepseek API密钥", type="password")
-    st.markdown("[获取Deepseek API密钥](https://platform.deepseek.com/api_keys)")
+    deepseek_api_key = st.text_input("请输入API密钥", type="password")
+    st.markdown("[获取API密钥](https://api.aigc369.com/v1)")
 
 theme_01 = st.text_input("主题:")
 submit = st.button("提交")
